@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+}
+span#logo {
+    font-family:'pacifico', cursive;
+    font-size: 20px;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;
+    position:fixed;
+    background-color: white;
+    width:100vw;
+    border-bottom:0.8px solid #ddd;
+}
+header ul li{
+    display:inline-block;
+    color:#222;
+    padding: 5px;
+    transition:all 0.4s ease-in;
+}
+header ul li:hover{
+    color:#e7a515;
+    cursor:pointer;
+}
+header button{
+    padding:10px 15px;
+    border-radius:50px;
+    border:none;
+    background-color:#e7a515;
+    color:#fff;
+    transition: all 0.4s ease-in-out;
+}
+header button:hover{
+    background-color: #be8f27;
+}
+/* for the main-elements */
+main{
+    padding-top:10vh;
+}
+
+/* container grid style below */
+.container-grid{
+    display:grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px,1fr));
+    grid-template-rows:repeat( 9, minmax(200px,1fr)); 
+    height:100vh;
+    grid-gap:10px;
+    padding:30px 8%;
+}
+
+footer{
+    padding:10px 8%;
+    text-align:center;
+    border-top:0.8px solid #ddd;
+    background-color: white;
+    position:relative;
+    bottom:0;
+}
+footer ul li{
+    display:inline;
+    padding:5px;
+    transition:all 0.3s ease-in-out 0s;
+
+    
+}
+
+footer ul li:hover{
+color:#e7a515;
+    cursor:pointer;
+}
+
+
+/*for smaller screen below 480px width*/
+@media screen and (max-width:480px){
+.social{
+    display:none;
+}
+footer{
+    position:relative;
+    bottom:-1620vh;
+}
+}
